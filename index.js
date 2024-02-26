@@ -90,7 +90,7 @@ form.addEventListener('submit', async function (event) {
     await refreshNote();
     
     // addNote(); ne sert à rien
-    // updateCounter();
+    updateCounter();
     resetInput();
   }
 });

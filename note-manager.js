@@ -33,4 +33,14 @@ export class NoteManager {
         }
     });
   }
+
+  static async update(note) {
+    const response = await fetch('http://localhost:3000/notes/' + id, {
+      methode: "PUT",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(note)
+    });
+  }
 }
